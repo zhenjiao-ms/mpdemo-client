@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Hello Student
+  div
+    p Watch the video from teacher and click "completed" button when it is done
+    video(src="sample.mp4" controls)
+  div
+    button(id="done" onclick="done()") I am done.
+  div
+    p(id="donemsg")
+  div
+    a(href="./teacher") Next Step
+<script src="./helper.js"></script>
