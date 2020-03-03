@@ -4,9 +4,10 @@ block content
   h1 Hello #{who}
   p Please upload your video to blob
   form
-    input(type="file" id="file")
-    button(id="upload" onclick="upload()")
+    input(type="file" id="file")|
+  p
+  button(id="upload" onclick="upload()") Upload
   div
-    p(id="uploadmsg")
-    div
-      a(href="./student") Next Step
+    p#upmsg test
+  div
+    a(href="./student") Next Step
