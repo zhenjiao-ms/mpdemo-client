@@ -1,0 +1,14 @@
+extends layout
+
+
+block content
+  h1 Hello #{who}
+  div
+    p(id="resultmsg") 0 student has watched your video
+  div
+    button(id="refresh" onclick="refresh()") Refresh
+  div
+    p(id="refreshmsg")
+  div
+    a(href="./student") Last step
+
