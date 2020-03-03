@@ -10,7 +10,7 @@ html
       }
       function done(){
           const http = new XMLHttpRequest();
-          const url = "https://zhentestwechat.azurewebsites.net/api/Inc?code=qUzUGwLj0n8jXbgTSh/OnJm49elggJpkW8lPBy3387PSlnr6LhiupA==&name=aa";
+          const url = "https://zhentestwechat.azurewebsites.net/api/Inc?code=qUzUGwLj0n8jXbgTSh/OnJm49elggJpkW8lPBy3387PSlnr6LhiupA==&name=student";
           http.onreadystatechange=function(){
             if(http.readyState==4 && http.status==200){
               var x=document.getElementById("donemsg");
@@ -21,9 +21,8 @@ html
           http.send();
       }
       function refresh(){
-        var x=document.getElementById("resultmsg");
-        x.innerHTML = "1 student has watched the video"
-        //call function
+          var x=document.getElementById("resultmsg");
+          x.innerHTML = "1 student has watched the video"
       }
   body
     block content
