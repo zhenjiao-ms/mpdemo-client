@@ -2,12 +2,12 @@ extends layout
 
 block content
   h1 Hello #{who}
-  p Please upload your video to blob
+  p Please send your video to students
   form
     input(type="file" id="file")|
   p
   button(id="upload" onclick="upload()") Upload
   div
-    p#upmsg test
+    p#upmsg
   div
     a(href="./student") Next Step
