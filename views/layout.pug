@@ -9,12 +9,16 @@ html
         element.innerHTML = "The file has been uploaded successfully";
       }
       function done(){
-          var x=document.getElementById("donemsg");
           const http = new XMLHttpRequest();
           const url = "https://zhentestwechat.azurewebsites.net/api/Inc?code=qUzUGwLj0n8jXbgTSh/OnJm49elggJpkW8lPBy3387PSlnr6LhiupA==&name=aa";
+          http.onreadystatechange=function(){
+            if this.readyState==4 && this.status==200){
+              var x=document.getElementById("donemsg");
+              x.innerHTML = http.responseText;
+            }
+          }
           http.open("GET", url);
           http.send();
-          x.innerHTML = http.responseText;
       }
       function refresh(){
         var x=document.getElementById("resultmsg");
