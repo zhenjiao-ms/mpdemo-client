@@ -12,7 +12,7 @@ html
           const http = new XMLHttpRequest();
           const url = "https://zhentestwechat.azurewebsites.net/api/Inc?code=qUzUGwLj0n8jXbgTSh/OnJm49elggJpkW8lPBy3387PSlnr6LhiupA==&name=aa";
           http.onreadystatechange=function(){
-            if http.readyState==4 && http.status==200){
+            if(http.readyState==4 && http.status==200){
               var x=document.getElementById("donemsg");
               x.innerHTML = http.responseText;
             }
